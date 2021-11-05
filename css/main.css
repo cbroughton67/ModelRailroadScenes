@@ -1,11 +1,30 @@
+/* RESET STYLESHEET */
+* {
+    box-sizing: border-box;
+}
+html, body, div, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+body {
+    line-height: 1;
+}
+
+
 /*  GENERAL */
 
 body {
     font-family: 'Noto Sans', sans-serif;
+    max-width: 100%;
 }
 
 h1 {
     font-weight: 700;
+    margin-left: 1rem;
 }
 
 h2 {
@@ -14,7 +33,36 @@ h2 {
 
 /* COLORS */
 
+img {
+    max-width: 50%;
 
+}
+
+/*
+.container {
+    display: flex;
+    flex-wrap: flex;
+    flex-direction: row;
+    align-items: space-around;
+}
+*/
+
+
+.item {
+    display: flex;
+    flex-wrap: flex;
+    flex-direction: row;
+    margin: 0 20px 0 20px;
+
+}
+
+.main {
+    display: flex;
+    flex-wrap: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 1rem 1rem 1rem;
+}
 
 /* HEADER */
 
