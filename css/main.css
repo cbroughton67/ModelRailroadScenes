@@ -53,7 +53,7 @@ img {
     flex-wrap: flex;
     flex-direction: row;
     margin: 0 20px 0 20px;
-
+    align-items: center;
 }
 
 .main {
@@ -65,16 +65,48 @@ img {
 }
 
 /* HEADER */
+#pageTitle {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+}
 
-
+header {
+    background-color: darkblue;
+}
 
 /* FOOTER */
 
 
 
 /* NAVIGATION */
+/* default menu for screens > 600px */
+.menu {
+    overflow: hidden;
+    background-color: darkblue;
+    padding: 15px;
+}
 
+.menu a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding-left: 15px;
+    color: white;
+}
 
+.menu a:hover {
+    color: lightblue;
+}
+
+/* menu for screens <= 600px */
+@media screen and (max-width: 660px) {
+    .menu a {
+        float: none;
+        width: 100%;
+    }
+}
 
 /* PAGE-SPECIFIC */
 
