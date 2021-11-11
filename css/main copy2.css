@@ -35,13 +35,29 @@ h3 {
 
 p {
     line-height: 1.7em;
-    margin-right: 5%;
 }
 
-ul {
-    list-style: none;
+main {
+    max-width: 100%;
 }
 
+.column, .story {
+    display: flex;
+    /* flex-wrap: flex; */
+    flex-direction: column;
+    margin: 0 20px 0 20px;
+    align-items: center;
+    max-width: 50%;
+}
+
+.row {
+    display: flex;
+    /* flex-wrap: flex; */
+    /* flex-direction: wrap; */
+    align-items: center;
+    max-width: 100%;
+    margin: 1rem 1rem 1rem 1rem;
+}
 
 /* HEADER */
 #pageTitle {
@@ -64,38 +80,16 @@ header {
      text-align: center;
  }
 
-/***** INDEX PAGE *****/
-main {
-    max-width: 940px;
-    padding: 10px;
-    margin: 0 auto;
-}
 
+/* COLORS */
 
-/* Screens > 660px */
-@media screen and (min-width: 661px) {
-     .story {
-        width: 100%;
-        /* align-content: center; */
-    }
-
-
-    img {
-        border: 4px solid darkblue;
-        margin: 25px 25px 0 0;
-    }
-
-    .column {
-        /* display: flex; */
-        flex-direction: column;
-        width: 45%;
-        float: left;
-        padding: 15pxs;
-    }
+img {
+    /* max-width: 50%; */
+    border: 4px solid darkblue;
 }
 
 /* NAVIGATION */
-/* default menu for screens > 660px */
+/* default menu for screens > 600px */
 .menu {
     overflow: hidden;
     background-color: darkblue;
@@ -115,26 +109,19 @@ main {
     color: lightblue;
 }
 
-/* Screens <= 660px */
-@media screen and (max-width: 660px) {
+/* menu for screens <= 600px */
+@media screen and (max-width: 700px) {
     .menu a {
         float: none;
         width: 100%;
     }
-
-    .story {
+    .column, .story {
         display: flex;
-        /* flex-wrap: flex; */
         flex-direction: column;
-        margin: 5%;
+        margin: 20px;
+        padding: 30px;
         align-items: center;
-        max-width: 95%;
-    }
-    
-    img {
-        /* max-width: 50%; */
-        border: 4px solid darkblue;
-        max-width: 95%;
+        max-width: 100%;
     }
 }
 
