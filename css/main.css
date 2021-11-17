@@ -57,12 +57,26 @@ header {
 }
 
 /* FOOTER */
+footer {
+    text-align: center;
+    color: #ccc;
+    font-size: .75em;
+    clear: both;
+}
+
+.social {
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+    border: 0;
+}
+/*****
  footer {
      display: flex;
      flex-direction: column;
      padding: 60px 0;
      text-align: center;
- }
+ }*****/
 
 /***** INDEX PAGE *****/
 main {

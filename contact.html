@@ -5,20 +5,23 @@
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-        
+        <script src="js/main.js"></script>
         <link rel="stylesheet" href="css/main.css">
-        <title>Chris' Capstone</title>
+        <link rel="icon" type="image/png" href="img/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <title>Model Railroad Scenes</title>
     </head>
 
-    <body>
+    <body onload="copyrightDate()">
         <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+            <h1 id="pageTitle">Model Railroad Scenes</h1>
+   
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="#">Contact</a>
+            </div>
         </header>
     
 
@@ -29,8 +32,13 @@
         </div>
 
 
-        <footer>
 
+        <footer>
+            <a href="https://www.instagram.com/cbroughton67/" target="_blank"><img class="social" src="img/instagram.svg" alt="Instagram"></a> 
+            <a href="https://www.facebook.com/profile.php?id=100007485075854" target="_blank"><img class="social" src="img/facebook.svg" alt="Facebook"></a>
+            <a href="https://www.linkedin.com/in/chris-broughton-24995a4/" target="_blank"><img class="social" src="img/linkedin.svg" alt="LinkedIn"></a>
+            <!-- Copyright info - default to 2020 in case javascript is disabled, gets set via js call -->
+            <p>Copyright &copy;<span id="copyrightDate">2020</span> Chris Broughton</p>
         </footer>
     
     </body>
