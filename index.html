@@ -37,7 +37,7 @@
             
             <ul class="story">
                 <li>
-                    <img  class="column" src="img/FastLayne2.JPG" alt="Photo of Fast Layne">
+                    <img class="column" src="img/FastLayne2.JPG" alt="Photo of Fast Layne">
                     <div class="column">
                         <h3>Fast Layne</h3>
                         <p>“Fast Layne” is a tribute to a good high school friend (Layne), who became terminally ill in 2009 and passed away late in 2010. We were “gear heads” in high school and were obsessed with muscle cars. We often cruised our hometown on weekends, he in his 1969 Camaro, and me in my 1966 Mustang. He loved Chevy muscle cars, and even into adulthood, he would regularly find classics to restore and resell. Those memories were the inspiration behind this scene and a way to memorialize my friend.
@@ -46,17 +46,36 @@
                     </div>  
                 </li>
             </ul>
+
+            <ul class="story">
+                <li>
+                    <img class="column" src="img/RateauRemodeling2.jpg" alt="Photo of Rateau Remodeling 1950 Suburban">
+                    <div class="column">
+                        <h3>Rateau Remodeling 1950 Suburban</h3>
+                        <p>A major contributor to the layout is a friend who happens to be a master carpenter and built literally every stick of bench- work for the layout. He and his brother operate a remodeling company here in Louisville, Ky., and his brother owns a restored 1950 Chevy Suburban that displays their company logo. When I ran across a resin N-scale 1950 Suburban, I knew I had to include this detail on the layout. The logo is an image that I captured from their company’s website. I simply scaled it down and had it printed on white decal paper at a local office supply store. Once the Suburban was painted, it was just a matter of applying the decal to create an N scale version of his namesake Suburban.</p>
+                    </div>
+                </li>
+            </ul>
+
         </main>
 
-
         <footer>
+            <!-- Unfortunately, Chrome and Safari won't autoplay video unless it's muted. 
+                 They obviously don't appreciate the artistic mastery of Rick Astley... XD -->
+            <div id="easteregg" onclick="this.style.display='none'">
+                <video id="rick" autoplay muted>
+                    <source src="vid/Rick.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video> 
+            </div>
+            
             <a href="https://www.instagram.com/cbroughton67/" target="_blank"><img class="social" src="img/instagram.svg" alt="Instagram"></a> 
             <a href="https://www.facebook.com/profile.php?id=100007485075854" target="_blank"><img class="social" src="img/facebook.svg" alt="Facebook"></a>
             <a href="https://www.linkedin.com/in/chris-broughton-24995a4/" target="_blank"><img class="social" src="img/linkedin.svg" alt="LinkedIn"></a>
-            <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank"><img class="social" src="img/pornhub.jpg" alt="PornHub"></a>
+            <!-- <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank"><img class="social" src="img/pornhub.jpg" alt="PornHub"></a> -->
+            <input type="image" class="social" src="img/pornhub.jpg" onclick="rickRoll()"></input>
             <!-- Copyright info - default to 2020 in case javascript is disabled, gets set via js call -->
             <p>Copyright &copy;<span id="copyrightDate">2020</span> Chris Broughton</p>
         </footer>
-    
     </body>
 </html>
