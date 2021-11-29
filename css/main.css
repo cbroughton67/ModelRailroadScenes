@@ -109,8 +109,8 @@ main {
 
     #easteregg {
         display: none;
-        position:absolute;
-        top:225%;
+        position:fixed;
+        top:50%; 
         left:50%;
         transform:translate(-50%,-50%);
     }
@@ -161,8 +161,8 @@ main {
 
     #easteregg {
         display: none;
-        position:absolute;
-        top:425%;
+        position:fixed;
+        top:50%;
         left:50%;
         transform:translate(-50%,-50%);
     }
