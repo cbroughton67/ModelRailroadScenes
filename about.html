@@ -23,7 +23,7 @@
                 <a href="contact.html">Contact</a>
             </div>
         </header>
-
+        <!-- About page content -->
         <main class="content">
             <ul class="story">
                 <li>
@@ -39,14 +39,23 @@
                     </div>
                 </li>
             </ul>
+
+            <!-- Unfortunately, Chrome and Safari won't autoplay video unless it's muted. 
+                 They obviously don't appreciate the artistic mastery of Rick Astley... XD -->
+            <div id="easteregg" onclick="this.style.display='none'">
+                <video id="rick" autoplay muted>
+                    <source src="vid/Rick.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                </video> 
+            </div>            
         </main>    
 
-
+          <!-- Social Media footer links -->
         <footer>
             <a href="https://www.instagram.com/cbroughton67/" target="_blank"><img class="social" src="img/instagram.svg" alt="Instagram"></a> 
             <a href="https://www.facebook.com/profile.php?id=100007485075854" target="_blank"><img class="social" src="img/facebook.svg" alt="Facebook"></a>
             <a href="https://www.linkedin.com/in/chris-broughton-24995a4/" target="_blank"><img class="social" src="img/linkedin.svg" alt="LinkedIn"></a>
-            <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank"><img class="social" src="img/pornhub.jpg" alt="PornHub"></a>
+            <input type="image" class="social" src="img/pornhub.jpg" onclick="rickRoll()"></input>
             <!-- Copyright info - default to 2020 in case javascript is disabled, gets set via js call -->
             <p>Copyright &copy;<span id="copyrightDate">2020</span> Chris Broughton</p>
         </footer>
