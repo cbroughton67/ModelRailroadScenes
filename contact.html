@@ -13,7 +13,8 @@
         <title>Model Railroad Scenes</title>
     </head>
 
-    <body onload="copyrightDate()">
+    <body onload="copyrightDate(); document.getElementById('emailField').focus()"> 
+    <!-- <body onload="document.form1.email.focus()">    -->
         <header>
             <h1 id="pageTitle">Model Railroad Scenes</h1>
    
@@ -26,9 +27,26 @@
     
 
         <div>
-            <h1>Contact</h1>
-
-
+            <main class="content">
+                <ul class="story">
+                    <li>
+                        <img class="column" src="img/nmra.jpg" alt="NMRA Logo">
+                        <div class="column">            
+                            <h1>Contact</h1>
+                            <P>If you'd like to receive updates on the happenings on my model railroad, 
+                               provide your name and email address below, and I'll keep you updated!
+                            </P>
+                            <form name="form1" action=”#”></form>
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name"><br><br>
+                                <label for="emailField">Email:</label>
+                                <input type="email" id="emailField" name="email"><br><br>
+                                <button id="submit" onclick="validateEmail(document.getElementById('emailField').value)">Subscribe</button>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </main> 
         </div>
 
         <!-- Unfortunately, Chrome and Safari won't autoplay video unless it's muted. 
