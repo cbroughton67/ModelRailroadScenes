@@ -59,6 +59,10 @@ ul {
     width: 300px;
 }
 
+#response {
+    width: 400px;
+}
+
 /* HEADER */
 #pageTitle {
     background-color: darkblue;

@@ -21,13 +21,19 @@ function copyrightDate() {
 
     if(inputEmail.match(mailFormat))
     {
-      alert("You are now subscribed!");
+      var response = document.getElementById("response");
+      response.textContent = inputEmail + " is now subscribed!"; 
+      response.style.color = "green";
+      /* alert(inputEmail + " is now subscribed!");*/
       document.getElementById('emailField').focus();
       return true;
     }
     else
     {
-      alert("Invalid email address! Please try again.");
+      var response = document.getElementById("response");
+      response.textContent = inputEmail + " is an invalid email format. Please try again.";
+      response.style.color = "red";
+      /* alert(inputEmail + " is an invalid email format. Please try again."); */
       document.getElementById('emailField').focus();
       return false;
     }
